@@ -1,0 +1,43 @@
+
+         .btn-grad {background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%)}
+         .btn-grad {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+          
+         .btn-grad2 {background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%)}
+         .btn-grad2 {
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad2:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+          body {
+            background: linear-gradient(90deg, rgba(54,201,84,1) 4%, rgba(28,220,67,1) 8%, rgba(23,209,61,1) 20%, rgba(58,123,70,1) 25%, rgba(26,116,39,1) 30%, rgba(31,169,47,1) 36%, rgba(21,143,33,1) 41%, rgba(14,89,18,1) 49%, rgba(58,159,61,1) 54%, rgba(18,90,18,1) 60%, rgba(55,116,49,1) 70%, rgba(38,163,8,1) 95%);
+          }

@@ -7,5 +7,39 @@ const firebaseConfig = {
     messagingSenderId: "483559033336",
     appId: "1:483559033336:web:05a8c03f25924335daee0d"
   };
-  
- firebase.initializeApp(firebaseConfig);
+  if(!firebase.apps.length) {
+    firebase.initializeApp(firebaseConfig);
+
+  }
+ 
+
+ user_name = localStorage.getItem("user_name");
+ console.log(user_name);
+// document.getElementById("tag").innerHTML = "Welcome " + user_name + " !";
+
+  function addRoom() {
+   room_name = document.getElementById("room_name").value;
+
+   localStorage.setItem("room_name", room_name);
+
+   firebase.database().ref("/").child(room_name).update({
+     purpose : "Adding Room Name"
+   });
+
+   window.location = "kwitter_page.html";
+
+ }
+
+ function getData() {firebase.database().ref("/").on('value',
+function(snapshot) {document.getElementById("output").innerHTML =
+"";snapshot.forEach(function(childSnapshot) {childKey = childSnapshot.key;
+Room_names = childKey;
+//Start code
+console.log("Room Name -" + room_name);
+
+//End code
+});});}
+
+getData();
+
+

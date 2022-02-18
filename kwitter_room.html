@@ -16,7 +16,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
 <link rel="stylesheet" type="text/css" href="kwitter_room.css">
-<script src="kwitter_room.js"></script>
 
 </head>
 
@@ -27,15 +26,18 @@
         <div class="form-group">
 
     <button class="btn-grad2" onclick="logout()"> Logout </button>
-    <h3 id="tag"></h3>
+    <h3 id="tag"> </h3>
     <input type="text" id="room_name" class="form-control" placeholder="Room Name">
     <button class="btn-grad" onclick="addRoom()"> Add Room </button> 
     <h2 id="room_names"> </h2>
+
+    <div id="output"> </div>
 
     </div>
 
     </center>
 
+    <script src="kwitter_room.js"></script>
 
 </body>
 

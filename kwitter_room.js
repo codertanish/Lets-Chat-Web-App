@@ -15,7 +15,7 @@ const firebaseConfig = {
 
  user_name = localStorage.getItem("user_name");
  console.log(user_name);
-// document.getElementById("tag").innerHTML = "Welcome " + user_name + " !";
+ document.getElementById("tag").innerHTML = "Welcome " + user_name + " !";
 
   function addRoom() {
    room_name = document.getElementById("room_name").value;
@@ -30,16 +30,25 @@ const firebaseConfig = {
 
  }
 
- function getData() {firebase.database().ref("/").on('value',
-function(snapshot) {document.getElementById("output").innerHTML =
-"";snapshot.forEach(function(childSnapshot) {childKey = childSnapshot.key;
+ function getData() {firebase.database().ref("/").on('value', function(snapshot) {document.getElementById("output").innerHTML = ""; snapshot.forEach(function(childSnapshot) {childKey  = childSnapshot.key;
 Room_names = childKey;
 //Start code
-console.log("Room Name -" + room_name);
+
+
+console.log("Room Name -" + Room_names);
+row = "<div class='room_name' id=" + Room_names + " onclick='redirectToRoomName(this.id)' >#" + Room_names + "</div>";
+document.getElementById("output").innerHTML += row;
 
 //End code
 });});}
 
 getData();
+
+function redirectToRoomName(name) {
+  localStorage.setItem("room_name", name);
+  window.location = "kwitter_page.html";
+
+}
+
 
 

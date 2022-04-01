@@ -38,4 +38,65 @@
  body {
    background: linear-gradient(90deg, rgba(54,201,84,1) 4%, rgba(28,220,67,1) 8%, rgba(23,209,61,1) 20%, rgba(58,123,70,1) 25%, rgba(26,116,39,1) 30%, rgba(31,169,47,1) 36%, rgba(21,143,33,1) 41%, rgba(14,89,18,1) 49%, rgba(58,159,61,1) 54%, rgba(18,90,18,1) 60%, rgba(55,116,49,1) 70%, rgba(38,163,8,1) 95%);
    font-size: 15px;
+   text-align: center;
+   font-family: Comic Sans MS;
  }
+
+ #output
+{
+	padding: 10px;
+  width:80%;
+  background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(240,126,71,1) 48%, rgba(224,148,233,1) 100%);
+  border-radius: 15px;
+}
+
+.input_div
+{
+	position: fixed; bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+}
+.input_div label
+{
+	color: black;
+}
+.input_div #message
+{
+	width: 80%;
+}
+.input_div button
+{
+	margin-top: 15px;
+	width: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.chat_icon
+{
+	width:20px;
+}
+.message_h4
+{
+	padding-left:5px;
+  color: black;
+}
+
+
+.btn-grad3 {background-image: linear-gradient(to right, #ECE9E6 0%, #FFFFFF  51%, #ECE9E6  100%)}
+.btn-grad3 {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+ }
+
+ .btn-grad3:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
